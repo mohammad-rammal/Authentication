@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "backend/index.js",
 	"scripts": {
-		"dev": "NODE_ENV=development nodemon backend/app.js",
+		"dev": " nodemon backend/app.js",
 		"start": "NODE_ENV=production node backend/app.js",
 		"build": "npm install && npm install --prefix frontend --production=false && npm run build --prefix frontend"
 	},

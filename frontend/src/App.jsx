@@ -12,6 +12,7 @@ import LoadingSpinner from './components/LoadingSpinner';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPassword';
 import Cursor from './utils/Cursor';
+import Footer from './pages/Footer';
 
 // protect routes that requires auth
 const ProtectedRoute = ({children}) => {
@@ -105,7 +106,7 @@ function App() {
                 />
                 <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
-
+            <Footer />
             <Toaster />
         </div>
     );
