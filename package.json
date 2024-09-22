@@ -6,7 +6,7 @@
 	"scripts": {
 		"dev": "NODE_ENV=development nodemon backend/index.js",
 		"start": "NODE_ENV=production node backend/index.js",
-"build": "npm install --legacy-peer-deps && cd frontend && npm install --legacy-peer-deps && npm run build"
+"build": "npm install && npm install --prefix frontend && npm install --prefix frontend && npm run build --prefix frontend"
 	},
 	"keywords": [],
 	"author": "",
